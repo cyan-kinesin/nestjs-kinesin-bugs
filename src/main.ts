@@ -16,10 +16,10 @@ async function bootstrap() {
     new FastifyAdapter(),
   );
 
-  app.enableVersioning({
-    type: VersioningType.HEADER,
-    header: 'Version',
-  });
+  // app.enableVersioning({
+  //   type: VersioningType.HEADER,
+  //   header: 'Version',
+  // });
   await app.listen(3000);
 }
 bootstrap();
